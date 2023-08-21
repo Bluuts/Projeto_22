@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         VALUES('$nome','$senha','n')";
         mysqli_query($link, $sql);
         #CADASTROU USUARIO E JOGA MENSAGEM NA TELA E DIRECIONA PARA LISTA USUARIO
-        echo "<script>window.alert('USUARIO JÁ EXISTE');</script>";
+        echo "<script>window.alert('USUARIO CADASTRADO COM SUCESSO');</script>";
         echo "<script>window.location.href='listausuario.php';</script>";
     }
 }
